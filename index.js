@@ -128,7 +128,6 @@ function handleMessage(sender_psid, received_message) {
         console.log(incoming);
         // Sends the response message
         callSendAPI(sender_psid, response);
-        return;
       }
       var searchQuery = incoming.split(' near ')[0];
       var locationQuery = incoming.split(' near ')[1];
@@ -143,7 +142,6 @@ function handleMessage(sender_psid, received_message) {
           }
           // Sends the response message
           callSendAPI(sender_psid, response);
-          return;
         }
 
         var coordinates = {
