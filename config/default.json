@@ -1,0 +1,6 @@
+{
+    "appSecret": "2fc5d80ac3fa164e6655845ba5839223",
+    "pageAccessToken": "EAAN7phZBi1OoBAMQF4jMzj0WwmrqtFoz9ZBNTnEk0GOPB647FBc5QNA8ucCOfO80s4oyHR1IQPCuBY3cBzh9H05gWbrZB14XhF3M0LsKHzukQ314ullHfa0R8WtvGcxgWajTMS0TTQiSEpQbk1fZBp6BQLDJb2uJie8ZA1w6D9EowEw6CW7sX",
+    "validationToken": "test",
+    "serverURL": "https://fathomless-waters-10209.herokuapp.com/webhook"
+}
