@@ -21,7 +21,6 @@ const
   request = require('request'),
   express = require('express'),
   body_parser = require('body-parser'),
-  twilio = require('twilio'),
   app = express().use(body_parser.json()); // creates express http server
 
 const PAGE_ACCESS_TOKEN = "EAAN7phZBi1OoBAMQF4jMzj0WwmrqtFoz9ZBNTnEk0GOPB647FBc5QNA8ucCOfO80s4oyHR1IQPCuBY3cBzh9H05gWbrZB14XhF3M0LsKHzukQ314ullHfa0R8WtvGcxgWajTMS0TTQiSEpQbk1fZBp6BQLDJb2uJie8ZA1w6D9EowEw6CW7sX";
@@ -29,13 +28,6 @@ const PAGE_ACCESS_TOKEN = "EAAN7phZBi1OoBAMQF4jMzj0WwmrqtFoz9ZBNTnEk0GOPB647FBc5
 //HERE credentials
 const hereID = 'uCKWIpdAPOobg4i3fSLx';
 const hereCode = 'SqyhK_kzHrsB6cG4XM0k2A';
-
-//Twilio credentials:
-const twilioSid = 'ACed35559d3f3757a3e17e17e0a82df334';
-const twilioToken = 'af7f4d73a0165f59dff43a4ac3a2d1c4';
-
-const client = new twilio(twilioSid, twilioToken);
-const MessagingResponse = twilio.twiml.MessagingResponse;
 
 var places = [];
 
@@ -67,8 +59,6 @@ app.post('/webhook', (req, res) => {
       // pass the event to the appropriate handler function
       if (webhook_event.message) {
         handleMessage(sender_psid, webhook_event.message);
-      } else if (webhook_event.postback) {
-        handlePostback(sender_psid, webhook_event.postback);
       }
 
     });
