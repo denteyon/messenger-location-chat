@@ -23,11 +23,11 @@ const
   body_parser = require('body-parser'),
   app = express().use(body_parser.json()); // creates express http server
 
-const PAGE_ACCESS_TOKEN = "EAAN7phZBi1OoBAMQF4jMzj0WwmrqtFoz9ZBNTnEk0GOPB647FBc5QNA8ucCOfO80s4oyHR1IQPCuBY3cBzh9H05gWbrZB14XhF3M0LsKHzukQ314ullHfa0R8WtvGcxgWajTMS0TTQiSEpQbk1fZBp6BQLDJb2uJie8ZA1w6D9EowEw6CW7sX";
+const PAGE_ACCESS_TOKEN = "<token>";
 
 //HERE credentials
-const hereID = 'uCKWIpdAPOobg4i3fSLx';
-const hereCode = 'SqyhK_kzHrsB6cG4XM0k2A';
+const hereID = '<token>';
+const hereCode = '<token>';
 
 var places = [];
 
